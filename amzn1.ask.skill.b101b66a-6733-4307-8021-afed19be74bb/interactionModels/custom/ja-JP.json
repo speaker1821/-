@@ -1,0 +1,84 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "停止"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "audioTitle",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "audioSearchIntent",
+          "samples": [
+            "{audioTitle} を検索して ",
+            "{audioTitle} で検索して ",
+            "{audioTitle} を検索 ",
+            "{audioTitle} で検索 "
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "number",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "SelectAudioIntent",
+          "samples": [
+            "{number} 番 ",
+            "{number}"
+          ]
+        },
+        {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "PlaylistIntent",
+          "samples": [
+            "プレイリストを再生",
+            "お気に入りを再生"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "ウーファーオーディオプレイヤー"
+    }
+  }
+}
